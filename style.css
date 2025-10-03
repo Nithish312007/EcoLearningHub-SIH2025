@@ -1,0 +1,84 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #d4f7d4, #f0fff0);
+}
+
+header h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin: 20px 0;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+#scoreboard {
+  background: #e0ffe0;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+#progressContainer {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(270deg, #4caf50, #2e7d32, #66bb6a);
+  background-size: 200% 100%;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+#moduleArea {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.moduleBtn {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #388e3c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.moduleBtn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+#contentArea {
+  margin: 20px auto;
+  width: 90%;
+  min-height: 350px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: relative;
+}

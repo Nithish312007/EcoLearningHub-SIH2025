@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Learning Hub - Functional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Eco Learning Hub 🌍</h1>
+  </header>
+
+  <div id="scoreboard">
+    <p>Points: <span id="points">0</span> | Badges: <span id="badges">0</span> | Level: <span id="level">1</span></p>
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="moduleArea">
+    <button class="moduleBtn" id="quizBtn">Quiz</button>
+    <button class="moduleBtn" id="dragBtn">Trash Drag & Drop</button>
+    <button class="moduleBtn" id="clickMatchBtn">Click Match Game</button>
+    <button class="moduleBtn" id="leaderboardBtn">Leaderboard</button>
+  </div>
+
+  <div id="contentArea"></div>
+
+  <audio id="correctSound" src="assets/correct.mp3"></audio>
+  <audio id="wrongSound" src="assets/wrong.mp3"></audio>
+  <audio id="levelUpSound" src="assets/levelup.mp3"></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
